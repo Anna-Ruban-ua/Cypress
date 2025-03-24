@@ -1,4 +1,5 @@
 import BasePage from "./basePage";
+import { endpoints } from '../../support/endpoints';
 
 export default class HomePage extends BasePage {
     public mainMenuButton = "#main-menu button";
@@ -19,7 +20,7 @@ export default class HomePage extends BasePage {
       }
 
     visitHomePage() {
-        this.visit('');
+        this.visit(endpoints.home);
     }
     
     clickMenuToggleButton() {

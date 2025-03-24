@@ -1,3 +1,4 @@
+import { endpoints } from "../../support/endpoints";
 import BasePage from "./basePage";
 
 export default class SolutionsPage extends BasePage {
@@ -16,7 +17,7 @@ export default class SolutionsPage extends BasePage {
       }
 
     visitSolutionsPage() {
-        this.visit('/solutions');
+        this.visit(endpoints.solutions);
     }
 
     openFilterMenu() {

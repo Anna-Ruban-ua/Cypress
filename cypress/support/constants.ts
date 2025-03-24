@@ -1,38 +1,40 @@
+import { endpoints } from './endpoints';
+
 export const menuItems = [
-    { menuName: "Products", itemUrl: "/products", isDirectLink: false },
-    { menuName: "Solutions", itemUrl: "/solutions", isDirectLink: false },
-    { menuName: "Pricing", itemUrl: "/pricing", isDirectLink: true },
-    { menuName: "Why Telnyx", itemUrl: "/why-telnyx", isDirectLink: false },
-    { menuName: "Resources", itemUrl: "/resources", isDirectLink: false },
-    { menuName: "Developers" }
+  { menuName: "Products", itemUrl: endpoints.products, isDirectLink: false },
+  { menuName: "Solutions", itemUrl: endpoints.solutions, isDirectLink: false },
+  { menuName: "Pricing", itemUrl: endpoints.pricing, isDirectLink: true },
+  { menuName: "Why Telnyx", itemUrl: endpoints.whyTelnyx, isDirectLink: false },
+  { menuName: "Resources", itemUrl: endpoints.resources, isDirectLink: false },
+  { menuName: "Developers" }
 ];
 
 export const footerCompanyItems = [
-    { footerName: "Our Network", itemUrl: "/our-network" },
-    { footerName: "Global coverage", itemUrl: "/global-coverage" },
-    { footerName: "Release Notes", itemUrl: "/release-notes" },
-    { footerName: "Careers", itemUrl: "/careers" },
-    { footerName: "Website Terms and Conditions", itemUrl: "/terms-and-conditions" },
-    { footerName: "Terms and conditions of service", itemUrl: "/terms-and-conditions-of-service" },
-    { footerName: "Voice AI", itemUrl: "/voice-ai" }
+  { footerName: "Our Network", itemUrl: endpoints.ourNetwork },
+  { footerName: "Global coverage", itemUrl: endpoints.globalCoverage },
+  { footerName: "Release Notes", itemUrl: endpoints.releaseNotes },
+  { footerName: "Careers", itemUrl: endpoints.careers },
+  { footerName: "Website Terms and Conditions", itemUrl: endpoints.terms },
+  { footerName: "Terms and conditions of service", itemUrl: endpoints.termsService },
+  { footerName: "Voice AI", itemUrl: endpoints.voiceAI }
 ];
 
 export const footerLegalItems = [
-    { footerName: "Data and Privacy", itemUrl: "/data-privacy" },
-    { footerName: "Report Abuse", itemUrl: "/report-abuse" },
-    { footerName: "Privacy Policy", itemUrl: "/privacy-policy" },
-    { footerName: "Cookie Policy", itemUrl: "/cookie-policy" },
-    { footerName: "Law Enforcement", itemUrl: "/law-enforcement-request" },
-    { footerName: "Acceptable Use", itemUrl: "/acceptable-use-policy" },
-    { footerName: "Trust Center", itemUrl: "https://trust.telnyx.com" }
+  { footerName: "Data and Privacy", itemUrl: endpoints.dataPrivacy },
+  { footerName: "Report Abuse", itemUrl: endpoints.reportAbuse },
+  { footerName: "Privacy Policy", itemUrl: endpoints.privacyPolicy },
+  { footerName: "Cookie Policy", itemUrl: endpoints.cookiePolicy },
+  { footerName: "Law Enforcement", itemUrl: endpoints.lawEnforcement },
+  { footerName: "Acceptable Use", itemUrl: endpoints.acceptableUse },
+  { footerName: "Trust Center", itemUrl: endpoints.trustCenter }
 ];
 
 export const footerCompareTelnixItems = [
-    { footerName: "Telnyx vs. Twilio", itemUrl: "/the-better-twilio-alternative" },
-    { footerName: "Telnyx vs. Bandwidth", itemUrl: "/the-better-bandwidth-alternative" },
-    { footerName: "Telnyx vs. Kore Wireless", itemUrl: "/the-better-kore-wireless-alternative" },
-    { footerName: "Telnyx vs. Hologram", itemUrl: "/the-better-hologram-alternative" },
-    { footerName: "Telnyx vs. Vonage", itemUrl: "/the-better-vonage-voice-api-alternative" },
-    { footerName: "Telnyx vs. Amazon S3", itemUrl: "/the-better-amazon-s3-alternative" },
-    { footerName: "AI Glossary", itemUrl: "/learn-ai" },
+  { footerName: "Telnyx vs. Twilio", itemUrl: endpoints.twilio },
+  { footerName: "Telnyx vs. Bandwidth", itemUrl: endpoints.bandwidth },
+  { footerName: "Telnyx vs. Kore Wireless", itemUrl: endpoints.kore },
+  { footerName: "Telnyx vs. Hologram", itemUrl: endpoints.hologram },
+  { footerName: "Telnyx vs. Vonage", itemUrl: endpoints.vonage },
+  { footerName: "Telnyx vs. Amazon S3", itemUrl: endpoints.s3 },
+  { footerName: "AI Glossary", itemUrl: endpoints.aiGlossary }
 ];

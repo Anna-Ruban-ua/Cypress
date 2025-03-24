@@ -1,4 +1,5 @@
 import { generateValidEmail, generateInvalidEmail } from "../support/dataGenerator"
+import { endpoints } from "../support/endpoints";
 import HomePage from "./page_objects/homePage";
 
 describe('Form Validation Tests', () => {
@@ -10,7 +11,7 @@ describe('Form Validation Tests', () => {
 
     it('TC04 Valid "Connect with us" Form', () => {
         homePage.fillContactWithUsForm(generateValidEmail());
-        cy.url().should("contain", "/sign-up");
+        cy.url().should("contain", endpoints.signUp);
     })
 
     it('TC05 Invalid "Connect with us" Form', () => {

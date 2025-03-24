@@ -1,5 +1,6 @@
 import { generateInvalidUrl } from "../support/dataGenerator";
-import Error404Page from '../e2e/page_objects/error404Page'
+import Error404Page from '../e2e/page_objects/error404Page';
+import { endpoints } from '../support/endpoints';
 
 describe('404 Page Behavior', () => {
   const error404Page = new Error404Page();
@@ -14,7 +15,7 @@ describe('404 Page Behavior', () => {
 
     error404Page.clickBackToHome();
     
-    cy.url().should('eq', Cypress.config('baseUrl') + '/');
+    cy.url().should('eq', Cypress.config('baseUrl') + endpoints.home);
   });
 
 });
