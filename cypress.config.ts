@@ -5,7 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
     },
     baseUrl: 'https://telnyx.com',
-    projectId: 'ofn6my',
+    projectId: '1mkx4j',
     
   },
 });

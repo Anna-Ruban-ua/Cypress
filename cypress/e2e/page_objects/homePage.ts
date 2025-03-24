@@ -64,7 +64,7 @@ export default class HomePage extends BasePage {
     }
 
     acceptCookies() {
-        this.getElement(this.acceptCookieButton).should('be.visible', { timeout: 5000 }).click();
+        this.getElement(this.acceptCookieButton).click();
     }
 
     getCookieBanner() {
