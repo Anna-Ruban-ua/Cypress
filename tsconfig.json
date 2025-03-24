@@ -5,5 +5,6 @@
       "types": ["cypress", "node"],
       "baseUrl": "./",
     },
-    "include": ["**/*.ts"]
+    "include": ["**/*.ts"],
+    "exclude": ["cypress/configs", "cypress.config.*.ts"]
   }
