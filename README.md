@@ -36,17 +36,3 @@ npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
 
 All test results are sent to Cypress Cloud for reporting and analysis. Make sure your project is connected and authenticated.
 
-🛠 Useful Commands (for bash)
-
-# Create README.md file
-touch README.md
-
-# Open Cypress UI
-npx cypress open
-
-# Run with specific config (mobile)
-npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
-
-# Run with specific config (fullscreen)
-npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts
-
