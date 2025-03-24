@@ -1,38 +1,40 @@
-Cypress E2E Testing Project
+# Telnyx Cypress E2E Testing Project
 
-This project contains automated end-to-end tests written in Cypress with TypeScript. The test suite covers multiple viewport scenarios (mobile, fullscreen) and generates reports via Cypress Cloud.
+## Reports
 
-📁 Project Structure
+🔗 [Latest Cypress report](https://cloud.cypress.io/projects/1mkx4j/runs/5/overview?roarHideRunsWithDiffGroupsAndTags=1)
 
-cypress/: test files, support, and page objects
+## Test Cases
 
-cypress/configs/: alternative Cypress configuration files
+🧪 [Test cases for Telnyx](https://docs.google.com/spreadsheets/d/1kseA19mz9KTTrFpkDTaiH6Goj3PPxELe0FnmTtAIUak/edit?gid=0)
 
-cypress.config.mobile.ts
+## Requirements
 
-cypress.config.fullscreen.ts
+- Node.js (latest LTS recommended)
+- Cypress
+- TypeScript
+- GitHub (for version control)
 
-cypress.config.ts: default Cypress configuration
+## Clone the repository:
+   ```sh
+   git clone https://github.com/Anna-Ruban-ua/Cypress
+   ```
 
-tsconfig.json: TypeScript configuration
+## Steps to Launch
 
-🚀 Installation
-
-npm install
-
-🧲 Run Tests (Default Config)
-
-npx cypress run
-
-💥 Run with Fullscreen Config
-
-npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts
-
-📱 Run with Mobile Config
-
-npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
-
-☁️ Reports
-
-All test results are sent to Cypress Cloud for reporting and analysis. Make sure your project is connected and authenticated.
-
+1. Run tests with default config:
+   ```sh
+   npx cypress run
+   ```
+2. Run with mobile config:
+   ```sh
+   npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
+   ```
+3. Run with fullscreen config:
+   ```sh
+   npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts
+   ```
+4. Open Cypress Test Runner:
+   ```sh
+   npx cypress open
+   ```
