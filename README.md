@@ -8,13 +8,6 @@
 
 🧪 [Test cases for Telnyx](https://docs.google.com/spreadsheets/d/1kseA19mz9KTTrFpkDTaiH6Goj3PPxELe0FnmTtAIUak/edit?gid=0)
 
-## Requirements
-
-- Node.js (latest LTS recommended)
-- Cypress
-- TypeScript
-- GitHub (for version control)
-
 ## Clone the repository:
    ```sh
    git clone https://github.com/Anna-Ruban-ua/Cypress
@@ -26,15 +19,23 @@
    ```sh
    npx cypress run
    ```
-2. Run with mobile config:
+2. Run tests in Chrome:
+   ```sh
+   npx cypress run --browser chrome
+   ```
+3. Run tests in Firefox:
+   ```sh
+   npx cypress run --browser firefox
+   ```
+4. Run with mobile config:
    ```sh
    npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
    ```
-3. Run with fullscreen config:
+5. Run with fullscreen config:
    ```sh
    npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts
    ```
-4. Open Cypress Test Runner:
+6. Open Cypress Test Runner:
    ```sh
    npx cypress open
    ```
