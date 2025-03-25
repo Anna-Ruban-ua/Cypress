@@ -24,29 +24,29 @@ This repository contains automated end-to-end tests for the Telnyx website, writ
 
 1. Run tests with default config:
    ```sh
-   npx cypress run
+   npm run test
    ```
 2. Run tests in Chrome:
    ```sh
-   npx cypress run --browser chrome
+   npm run test:chrome
    ```
 3. Run tests in Firefox:
    ```sh
-   npx cypress run --browser firefox
+   npm run test:firefox
    ```
 4. Run with mobile config:
    ```sh
-   npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
+   npm run test:mobile
    ```
 5. Run with fullscreen config:
    ```sh
-   npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts
+   npm run test:fullscreen
    ```
 6. Open Cypress Test Runner:
    ```sh
-   npx cypress open
+   npm run open
    ```
 ## Run tests with recording enabled (Cypress Cloud):
    ```sh
-   npx cypress run --record
+   npm run test:record
    ```
