@@ -12,6 +12,7 @@
         "open": "npx cypress open",
         "test:record": "npx cypress run --record"
     },
+    "author": "Anna Ruban",
     "devDependencies": {
         "cypress": "^14.2.0",
         "typescript": "^5.8.2"
