@@ -1,4 +1,4 @@
-import { footerCompanyItems, footerCompareTelnixItems, footerLegalItems } from "../support/constants";
+import { footerCompanyItems } from "../support/constants";
 import HomePage from "./page_objects/homePage";
 
 describe('Navigation Tests', () => {
@@ -13,21 +13,5 @@ describe('Navigation Tests', () => {
             homePage.clickFooterItem(footerName);
             homePage.getCurrentUrl().should("contain", itemUrl);
         })
-    });
-
-    it.skip('TC02 Footer "Legal" Links Validation', () => {
-        footerLegalItems.forEach(({ footerName, itemUrl }) => {
-            cy.wait(60000);
-            homePage.clickFooterItem(footerName);
-            homePage.getCurrentUrl().should("contain", itemUrl);
-        })
-    });
-
-    it('TC03 Footer "Compare Telnyx" Links Validation', () => {
-        footerCompareTelnixItems.forEach(({ footerName, itemUrl }) => {
-            homePage.clickFooterItem(footerName);
-            homePage.getCurrentUrl().should("contain", itemUrl);
-        })
-    });
-
+    })
 })

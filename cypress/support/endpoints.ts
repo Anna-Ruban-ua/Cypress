@@ -16,20 +16,4 @@ export const endpoints = {
     terms: '/terms-and-conditions',
     termsService: '/terms-and-conditions-of-service',
     voiceAI: '/voice-ai',
-  
-    dataPrivacy: '/data-privacy',
-    reportAbuse: '/report-abuse',
-    privacyPolicy: '/privacy-policy',
-    cookiePolicy: '/cookie-policy',
-    lawEnforcement: '/law-enforcement-request',
-    acceptableUse: '/acceptable-use-policy',
-    trustCenter: 'https://trust.telnyx.com',
-  
-    twilio: '/the-better-twilio-alternative',
-    bandwidth: '/the-better-bandwidth-alternative',
-    kore: '/the-better-kore-wireless-alternative',
-    hologram: '/the-better-hologram-alternative',
-    vonage: '/the-better-vonage-voice-api-alternative',
-    s3: '/the-better-amazon-s3-alternative',
-    aiGlossary: '/learn-ai',
-  };
+}
