@@ -7,7 +7,7 @@ describe('Navigation Tests', () => {
         solutionsPage.visitSolutionsPage();
     });
 
-    it('TC10 Filter Verification on the Solutions Page', () => {
+    it('TC08 Filter Verification on the Solutions Page', () => {
       solutionsPage.openFilterMenu();
       solutionsPage.isFilterMenuVisible().should('be.visible');
       

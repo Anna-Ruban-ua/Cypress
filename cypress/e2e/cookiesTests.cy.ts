@@ -7,14 +7,14 @@ describe('Cookie Consent Banner', () => {
         homePage.visitHomePage();
     });
 
-    it('TC07 Accept Cookies', () => {
+    it('TC05 Accept Cookies', () => {
         homePage.getCookieByName('cookie-consent').should('not.exist');
         homePage.acceptCookies();
         cy.reload();
         homePage.getCookieBanner().should('not.exist');
     });
 
-    it('TC08 Clear Cookies', () => {
+    it('TC06 Clear Cookies', () => {
         cy.clearCookies();
         cy.reload();
         homePage.getCookieBanner().should('be.visible', { timeout: 8000 });

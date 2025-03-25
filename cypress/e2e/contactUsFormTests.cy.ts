@@ -9,12 +9,12 @@ describe('Form Validation Tests', () => {
         homePage.visitHomePage();
     });
 
-    it('TC04 Valid "Connect with us" Form', () => {
+    it('TC02 Valid "Connect with us" Form', () => {
         homePage.fillContactWithUsForm(generateValidEmail());
         cy.url().should("contain", endpoints.signUp);
     })
 
-    it('TC05 Invalid "Connect with us" Form', () => {
+    it('TC03 Invalid "Connect with us" Form', () => {
         homePage.fillContactWithUsForm(generateInvalidEmail());
         homePage.getConnectWithUsInputElement().then(($input) => {
             const validationMessage = ($input[0] as HTMLInputElement).validationMessage;
