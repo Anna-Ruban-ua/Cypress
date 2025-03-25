@@ -3,7 +3,15 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "test": "npx cypress run",
+        "test:chrome": "npx cypress run --browser chrome",
+        "test:firefox": "npx cypress run --browser firefox",
+        "test:mobile": "npx cypress run --config-file cypress/configs/cypress.config.mobile.ts",
+        "test:fullscreen": "npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts",
+        "open": "npx cypress open",
+        "test:record": "npx cypress run --record"
+    },
     "devDependencies": {
         "cypress": "^14.2.0",
         "typescript": "^5.8.2"
