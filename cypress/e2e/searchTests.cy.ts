@@ -8,7 +8,7 @@ describe('Solutions Search', () => {
     solutionsPage.visitSolutionsPage();
   });
 
-  it('TC11 Valid Search verification on the Solutions Page', () => {
+  it('TC09 Valid Search verification on the Solutions Page', () => {
     solutionsPage.getSearchResults().should('have.length.greaterThan', 0).then(($titles) => {
       const randomTitle = pickRandomTitle($titles);
       solutionsPage.typeInSearch(randomTitle);
@@ -16,7 +16,7 @@ describe('Solutions Search', () => {
     });
   }); 
 
-  it('TC12 Inalid Search verification on the Solutions Page', () => {
+  it('TC10 Inalid Search verification on the Solutions Page', () => {
     const invalidSearch = generateInvalidSearch();
     solutionsPage.typeInSearch(invalidSearch);
     solutionsPage.getNoResultsMessage().should('be.visible');

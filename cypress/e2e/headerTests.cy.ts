@@ -4,7 +4,7 @@ import HomePage from "./page_objects/homePage"
 describe('Navigation Tests', () => {
     const homePage = new HomePage;
 
-    it("TC06 Header Navigation Test", () => {
+    it("TC04 Header Navigation Test", () => {
         homePage.visitHomePage();
 
         menuItems.forEach(({ menuName, itemUrl, isDirectLink }) => {

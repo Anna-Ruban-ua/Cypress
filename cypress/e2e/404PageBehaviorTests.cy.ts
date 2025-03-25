@@ -5,7 +5,7 @@ import { endpoints } from '../support/endpoints';
 describe('404 Page Behavior', () => {
   const error404Page = new Error404Page();
   
-  it('TC09 404 Page Behavior', () => {
+  it('TC07 404 Page Behavior', () => {
  
     error404Page.visitInvalidPage(generateInvalidUrl());
 
