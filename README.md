@@ -4,6 +4,13 @@
 
 This repository contains automated end-to-end tests for the Telnyx website, written in Cypress with TypeScript. The project follows the Page Object Model (POM) pattern and includes both positive and negative scenarios for various functionalities such as search and footer links. Test reports are generated via Cypress Cloud.
 
+## Requirements
+
+- Node.js (latest LTS recommended)
+- Cypress
+- TypeScript
+- GitHub (for version control)
+
 ## Test Cases
 
 🧪 [Test cases for Telnyx](https://docs.google.com/spreadsheets/d/1kseA19mz9KTTrFpkDTaiH6Goj3PPxELe0FnmTtAIUak/edit?gid=0)
