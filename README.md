@@ -46,7 +46,7 @@ This repository contains automated end-to-end tests for the Telnyx website, writ
    ```sh
    npx cypress open
    ```
-7. Run tests with recording enabled (Cypress Cloud):
+## Run tests with recording enabled (Cypress Cloud):
    ```sh
    npx cypress run --record
    ```
