@@ -30,7 +30,7 @@ This repository contains automated end-to-end tests for the Telnyx website, writ
    npm install
    ```
 
-## Steps to Launch
+## Run tests
 
 1. Run tests with default config:
    ```sh
