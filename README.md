@@ -29,6 +29,10 @@ This repository contains automated end-to-end tests for the Telnyx website, writ
    ```sh
    npm install
    ```
+4. If you don’t have Cypress globally (optional):
+   ```sh
+   npm install -g cypress
+   ```
 
 ## Run tests
 
