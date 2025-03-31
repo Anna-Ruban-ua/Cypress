@@ -1,6 +1,9 @@
 # Telnyx Cypress E2E Testing Project
 
 ## Summary of Repo
+# Telnyx Cypress E2E Testing Project
+
+## Summary of Repo
 
 This repository contains automated end-to-end tests for the Telnyx website, written in Cypress with TypeScript. The project follows the Page Object Model (POM) pattern and includes both positive and negative scenarios for various functionalities such as search and footer links. Test reports are generated via Cypress Cloud.
 
