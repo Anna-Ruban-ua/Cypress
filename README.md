@@ -54,7 +54,7 @@ This repository contains automated end-to-end tests for the Telnyx website, writ
    ```
 6. Open Cypress Test Runner:
    ```sh
-   npm run open
+   npm run cy:open
    ```
 7. To run tests with recording enabled (Cypress Cloud):
    ```sh
