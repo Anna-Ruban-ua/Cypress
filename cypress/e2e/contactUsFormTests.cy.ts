@@ -19,6 +19,7 @@ describe('Form Validation Tests', () => {
         homePage.getConnectWithUsInputElement().then(($input) => {
             const validationMessage = ($input[0] as HTMLInputElement).validationMessage;
             expect(validationMessage).to.not.be.empty;
+        cy.url().should('not.include', endpoints.signUp);
         });
     })
 

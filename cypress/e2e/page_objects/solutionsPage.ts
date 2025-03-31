@@ -1,8 +1,9 @@
 import { endpoints } from "../../support/endpoints";
+import { solutionsTexts } from "../../support/texts";
 import BasePage from "./basePage";
 
 export default class SolutionsPage extends BasePage {
-    public filterButton = 'button:contains("Filter by")';
+    public filterButton = `button:contains("${solutionsTexts.filterButton}")`;
     public filterMenu = '[role="menu"]';
     public menuItemCheckboxes = '[role="menuitemcheckbox"]';
     public checkboxSelector = 'input[type="checkbox"]';
@@ -10,11 +11,6 @@ export default class SolutionsPage extends BasePage {
 
     public searchInput = '#search';
     public searchResultTitles = 'h3.c-PJLV.c-rMlRu.c-PJLV-cHtIMp-dark-false';
-    public noResultsMessage = 'No results for this filter';
-
-    constructor() {
-        super();
-      }
 
     visitSolutionsPage() {
         this.visit(endpoints.solutions);
@@ -53,7 +49,7 @@ export default class SolutionsPage extends BasePage {
     }
 
     getNoResultsMessage() {
-        return this.containsText(this.noResultsMessage);
+        return this.containsText(solutionsTexts.noResults);
     }
     
     isFilterMenuVisible() {
