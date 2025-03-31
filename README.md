@@ -56,13 +56,12 @@ This repository contains automated end-to-end tests for the Telnyx website, writ
    ```sh
    npm run open
    ```
-
+7. To run tests with recording enabled (Cypress Cloud):
+   ```sh
+   npm run test:record
+   ```
+   
 ## CI and Cypress Cloud
 
-- The project can be integrated with CI pipelines using GitHub Actions.
+- CI/CD is set up through GitHub Actions. CI/CD pipeline is triggered automatically on every push or merge to the main branch.
 - Cypress Cloud is used to record test runs and view dashboards with test analytics.
-
-To run tests with recording enabled (Cypress Cloud):
-```sh
-npm run test:record
-```
