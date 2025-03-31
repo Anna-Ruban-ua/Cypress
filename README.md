@@ -1,52 +1,68 @@
-Cypress E2E Testing Project
+# Telnyx Cypress E2E Testing Project
 
-This project contains automated end-to-end tests written in Cypress with TypeScript. The test suite covers multiple viewport scenarios (mobile, fullscreen) and generates reports via Cypress Cloud.
+## Summary of Repo
 
-📁 Project Structure
+This repository contains automated end-to-end tests for the Telnyx website, written in Cypress with TypeScript. The project follows the Page Object Model (POM) pattern and includes both positive and negative scenarios for various functionalities such as search and footer links. Test reports are generated via Cypress Cloud.
 
-cypress/: test files, support, and page objects
+## Requirements
 
-cypress/configs/: alternative Cypress configuration files
+- Node.js (latest LTS recommended)
+- Cypress
+- TypeScript
+- GitHub (for version control)
 
-cypress.config.mobile.ts
+## Test Cases
 
-cypress.config.fullscreen.ts
+🧪 [Test cases for Telnyx](https://docs.google.com/spreadsheets/d/1kseA19mz9KTTrFpkDTaiH6Goj3PPxELe0FnmTtAIUak/edit?gid=0)
 
-cypress.config.ts: default Cypress configuration
+## Install
 
-tsconfig.json: TypeScript configuration
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Anna-Ruban-ua/Cypress
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd Cypress
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-🚀 Installation
+## Steps to Launch
 
-npm install
+1. Run tests with default config:
+   ```sh
+   npm run test
+   ```
+2. Run tests in Chrome:
+   ```sh
+   npm run test:chrome
+   ```
+3. Run tests in Firefox:
+   ```sh
+   npm run test:firefox
+   ```
+4. Run with mobile config:
+   ```sh
+   npm run test:mobile
+   ```
+5. Run with fullscreen config:
+   ```sh
+   npm run test:fullscreen
+   ```
+6. Open Cypress Test Runner:
+   ```sh
+   npm run open
+   ```
 
-🧲 Run Tests (Default Config)
+## CI and Cypress Cloud
 
-npx cypress run
+- The project can be integrated with CI pipelines using GitHub Actions.
+- Cypress Cloud is used to record test runs and view dashboards with test analytics.
 
-💥 Run with Fullscreen Config
-
-npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts
-
-📱 Run with Mobile Config
-
-npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
-
-☁️ Reports
-
-All test results are sent to Cypress Cloud for reporting and analysis. Make sure your project is connected and authenticated.
-
-🛠 Useful Commands (for bash)
-
-# Create README.md file
-touch README.md
-
-# Open Cypress UI
-npx cypress open
-
-# Run with specific config (mobile)
-npx cypress run --config-file cypress/configs/cypress.config.mobile.ts
-
-# Run with specific config (fullscreen)
-npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts
-
+To run tests with recording enabled (Cypress Cloud):
+```sh
+npm run test:record
+```

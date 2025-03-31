@@ -15,10 +15,6 @@ export default class HomePage extends BasePage {
     public cookieBanner = "#onetrust-group-container"
     public acceptCookieButton = "#onetrust-accept-btn-handler";
 
-    constructor() {
-        super();
-      }
-
     visitHomePage() {
         this.visit(endpoints.home);
     }
@@ -51,6 +47,10 @@ export default class HomePage extends BasePage {
     clickFooterItem(footerName: string) {
         this.getElement(this.footerMenu).first().scrollIntoView();
         this.clickElementByText(this.footerMenu, footerName);
+    }
+
+    getFooterItem(footerName: string) {
+        return this.getElement(this.footerMenu).contains(footerName);
     }
 
     getConnectWithUsInputElement() {

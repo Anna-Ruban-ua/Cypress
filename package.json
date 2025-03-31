@@ -1,16 +1,16 @@
 {
     "name": "task3_cypress",
     "version": "1.0.0",
-    "description": "",
+    "description": "Telnyx Cypress E2E Testing Project",
     "main": "index.js",
     "scripts": {
-        "test": "npx cypress run",
-        "test:chrome": "npx cypress run --browser chrome",
-        "test:firefox": "npx cypress run --browser firefox",
-        "test:mobile": "npx cypress run --config-file cypress/configs/cypress.config.mobile.ts",
-        "test:fullscreen": "npx cypress run --config-file cypress/configs/cypress.config.fullscreen.ts",
-        "open": "npx cypress open",
-        "test:record": "npx cypress run --record"
+        "test": "cypress run",
+        "test:chrome": "cypress run --browser chrome",
+        "test:firefox": "cypress run --browser firefox",
+        "test:mobile": "cypress run --config-file cypress/configs/cypress.config.mobile.ts",
+        "test:fullscreen": "cypress run --config-file cypress/configs/cypress.config.fullscreen.ts",
+        "open": "cypress open",
+        "test:record": "cypress run --record"
     },
     "author": "Anna Ruban",
     "devDependencies": {
