@@ -1,12 +1,7 @@
-import { defineConfig } from "cypress";
+import config from '../../cypress.config';
 
-export default defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-    },
-    baseUrl: 'https://telnyx.com',
-    projectId: '1mkx4j',
-    viewportWidth: 390,
-    viewportHeight: 844,
-  },
-});
+config.e2e = config.e2e ?? {};
+config.e2e.viewportWidth = 390;
+config.e2e.viewportHeight = 844;
+
+export default config;

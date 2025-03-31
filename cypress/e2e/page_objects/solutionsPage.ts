@@ -2,7 +2,7 @@ import { endpoints } from "../../support/endpoints";
 import { solutionsTexts } from "../../support/texts";
 import BasePage from "./basePage";
 
-export default class SolutionsPage extends BasePage {
+class SolutionsPage extends BasePage {
     public filterButton = `button:contains("${solutionsTexts.filterButton}")`;
     public filterMenu = '[role="menu"]';
     public menuItemCheckboxes = '[role="menuitemcheckbox"]';
@@ -76,3 +76,5 @@ export default class SolutionsPage extends BasePage {
         return cy.contains(name, { matchCase: false });
     }
 }
+
+export default new SolutionsPage();

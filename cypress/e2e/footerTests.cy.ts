@@ -1,9 +1,7 @@
 import { footerCompanyItems } from "../support/constants";
-import HomePage from "./page_objects/homePage";
+import homePage from "./page_objects/homePage";
 
 describe('Navigation Tests', () => {
-    const homePage = new HomePage;
-
     beforeEach(() => {
         homePage.visitHomePage();
     });
