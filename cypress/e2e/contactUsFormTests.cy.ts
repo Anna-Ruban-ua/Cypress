@@ -1,10 +1,8 @@
 import { generateValidEmail, generateInvalidEmail } from "../support/dataGenerator"
 import { endpoints } from "../support/endpoints";
-import HomePage from "./page_objects/homePage";
+import homePage from "./page_objects/homePage";
 
 describe('Form Validation Tests', () => {
-    const homePage = new HomePage;
-
     beforeEach(() => {
         homePage.visitHomePage();
     });

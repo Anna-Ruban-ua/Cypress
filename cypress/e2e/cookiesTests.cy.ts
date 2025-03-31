@@ -1,8 +1,6 @@
-import HomePage from "./page_objects/homePage";
+import homePage from "./page_objects/homePage";
 
 describe('Cookie Consent Banner', () => {
-    const homePage = new HomePage;
-
     beforeEach(() => {
         homePage.visitHomePage();
     });

@@ -1,9 +1,7 @@
-import SolutionsPage from './page_objects/solutionsPage';
+import solutionsPage from './page_objects/solutionsPage';
 import { pickRandomTitle, generateInvalidSearch } from "../support/dataGenerator"
 
 describe('Solutions Search', () => {
-    const solutionsPage = new SolutionsPage();
-
   beforeEach(() => {
     solutionsPage.visitSolutionsPage();
   });

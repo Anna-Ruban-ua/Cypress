@@ -1,8 +1,6 @@
-import SolutionsPage from "./page_objects/solutionsPage";
+import solutionsPage from "./page_objects/solutionsPage";
 
 describe('Navigation Tests', () => {
-    const solutionsPage = new SolutionsPage;
-
     beforeEach(() => {
         solutionsPage.visitSolutionsPage();
     });
